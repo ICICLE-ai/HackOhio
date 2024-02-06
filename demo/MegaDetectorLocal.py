@@ -15,7 +15,7 @@ class MegaDetector:
         # Load MegaDetector
         from run_detector_multi import load_detector
 
-        self.model = load_detector(f"{ model_path }/md_v5a.0.0.pt", force_cpu=True)
+        self.model = load_detector(f"{ model_path }/md_v5a.0.0.pt", force_cpu=False)
 
     def __call__(self, image):
         # Generate detections for one image at a time.
