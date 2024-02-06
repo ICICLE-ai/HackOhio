@@ -37,4 +37,4 @@ For example,
 ## Troubleshoot
 If you are experiencing significant lag then try playing around with the FPS. 
 
-MegaDetector is a heavy model to use so you may require a GPU. The provided MegaDetector files should detect and use the GPU. If not then you can look at `MegaDetector/MegaDetector.py` or `MegaDetector/run_detector_multi.py` to see if the flag has been set.
+MegaDetector is a heavy model to use so you may require a GPU. The provided MegaDetector files should detect and use the GPU. If not then you can look at `demo/MegaDetectorLocal.py` or `MegaDetector/run_detector_multi.py` to see if the flag has been set.
