@@ -6,7 +6,7 @@ import threading
 
 import cv2 as cv
 import olympe
-import json
+# import json
 import visualization_utils as viz_utils
 from PIL import Image
 import numpy as np
@@ -17,6 +17,7 @@ olympe.log.update_config({"loggers": {"olympe": {"level": "WARNING"}}})
 
 DRONE_IP = os.environ.get("DRONE_IP", "192.168.53.1")
 DRONE_RTSP_PORT = os.environ.get("DRONE_RTSP_PORT")
+FPS = int(os.environ.get("FPS", "30"))
 
 # CONSTANT VARIBLES TAKEN FROM rundetector.py
 DETECTOR_METADATA = {
@@ -143,7 +144,7 @@ class VideoStream(threading.Thread):
             # Run detections on frame and display it.
             try:
                 cv_frame = self.to_cv_frame(yuv_frame)
-                if self.frame_counter % 10 == 0:
+                if self.frame_counter % (30 // FPS) == 0: # Desired FPS (Using integer division only)
                     cv_frame = self.detect(cv_frame)
                     self.show_yuv_frame(window_name, cv_frame)
             except Exception:

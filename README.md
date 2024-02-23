@@ -15,12 +15,14 @@ If using pyenv, then run
 >`pyenv install 3.9`
 >`pyenv virtualenv 3.9 demo-venv`
 >`pyenv activate demo-venv`
+>`pip install --upgrade pip setuptools wheel`
 
 To install the python libraries simply run,
 >`pip install -r requirements.txt`
 
-Lastly, download the required files to run MegaDetector from this [link](https://drive.google.com/file/d/1LEAJ8FVeAPC6woKEivi8ZyMWw933wecb/view?usp=sharing) and extract using gnu tar with the following command,
->`tar -xzf MegaDetector.tar.gz` 
+Lastly, download the required files to run MegaDetector from this [link](https://drive.google.com/file/d/1LEAJ8FVeAPC6woKEivi8ZyMWw933wecb/view?usp=sharing) and extract using gnu tar with the following command (make sure you download in the project folder */HackOhio*),
+>`tar -xzf MegaDetector.tar.gz`
+
 ## Run the Demo
 In order to run the demo you need to connect the Anafi Controller to your computer with the provided USB-A to USB-C cable. Connect the USB-C side to the Anafi Controller and the USB-A side to your computer.
 
@@ -29,10 +31,9 @@ Once the controller has been connected to your computer, go to your network sett
 For convenience a script *run.sh* is provided for you. It requires the following parameters,
 * Desired Frames per Second (1-30 inclusive)
 * Path to python environment
-* Path to the MegaDetector directory that was downloaded and extracted
 
 For example,
->`sh run.sh 30 demo-venv/bin/python ~/Documents/HackOhio/MegaDetector/` 
+>`sh run.sh 30 demo-venv/bin/python` 
 
 ## Troubleshoot
 If you are experiencing significant lag then try playing around with the FPS. 

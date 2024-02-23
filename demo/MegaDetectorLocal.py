@@ -2,9 +2,9 @@ import os
 import sys
 
 # Add all the repos cloned to run MegaDetector to the Python Path
-sys.path.append(f"{os.environ['MODEL_REPO']}/MegaDetector/1/")
+sys.path.append("./MegaDetector")
 for path in ["ai4eutils", "camera_traps_MD", "yolov5"]:
-    sys.path.append(f"{os.environ['MODEL_REPO']}/MegaDetector/1/{path}")
+    sys.path.append(f"./MegaDetector/{path}")
 
 
 class MegaDetector:
