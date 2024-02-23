@@ -20,7 +20,7 @@ If using pyenv, then run
 To install the python libraries simply run,
 >`pip install -r requirements.txt`
 
-Lastly, download the required files to run MegaDetector from this [link](https://drive.google.com/file/d/1LEAJ8FVeAPC6woKEivi8ZyMWw933wecb/view?usp=sharing) and extract using gnu tar with the following command (make sure you download in the project folder */HackOhio*),
+Lastly, download the required files to run MegaDetector from this [link](https://drive.google.com/file/d/1LEAJ8FVeAPC6woKEivi8ZyMWw933wecb/view?usp=sharing) and extract using gnu tar with the following command (make sure you download to the project folder */HackOhio*),
 >`tar -xzf MegaDetector.tar.gz`
 
 ## Run the Demo
