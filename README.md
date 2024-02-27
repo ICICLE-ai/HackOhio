@@ -20,7 +20,9 @@ pip install --upgrade pip setuptools wheel
 ```
 
 To install the python libraries simply run,
->`pip install -r requirements.txt`
+```console
+pip install -r requirements.txt
+```
 
 Lastly, download the required files to run MegaDetector from this [link](https://drive.google.com/file/d/1LEAJ8FVeAPC6woKEivi8ZyMWw933wecb/view?usp=sharing) and extract using gnu tar with the following command (make sure you download to the project folder */HackOhio*),
 ```console
