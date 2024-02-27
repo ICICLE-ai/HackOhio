@@ -12,10 +12,12 @@ A list of dependencies for both version are as follows,
 [*pyenv*](https://github.com/pyenv/pyenv) is a great tool to use any version of Python. Due to *Pillow v9.40* needed as a requirement. Do not upgrade Pillow because newer versions past *9.4.0* deprecated some of the functions used.
 
 If using pyenv, then run
->`pyenv install 3.9`
->`pyenv virtualenv 3.9 demo-venv`
->`pyenv activate demo-venv`
->`pip install --upgrade pip setuptools wheel`
+```console
+pyenv install 3.9
+pyenv virtualenv 3.9 demo-venv
+pyenv activate demo-venv
+pip install --upgrade pip setuptools wheel
+```
 
 To install the python libraries simply run,
 >`pip install -r requirements.txt`
