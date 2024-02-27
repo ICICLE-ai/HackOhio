@@ -23,7 +23,9 @@ To install the python libraries simply run,
 >`pip install -r requirements.txt`
 
 Lastly, download the required files to run MegaDetector from this [link](https://drive.google.com/file/d/1LEAJ8FVeAPC6woKEivi8ZyMWw933wecb/view?usp=sharing) and extract using gnu tar with the following command (make sure you download to the project folder */HackOhio*),
->`tar -xzf MegaDetector.tar.gz`
+```console
+tar -xzf MegaDetector.tar.gz
+```
 
 ## Run the Demo
 In order to run the demo you need to connect the Anafi Controller to your computer with the provided USB-A to USB-C cable. Connect the USB-C side to the Anafi Controller and the USB-A side to your computer.
@@ -35,7 +37,9 @@ For convenience a script *run.sh* is provided for you. It requires the following
 * Path to python environment
 
 For example,
->`sh run.sh 30 demo-venv/bin/python` 
+```console
+sh run.sh 30 demo-venv/bin/python
+```
 
 ## Troubleshoot
 If you are experiencing significant lag then try playing around with the FPS. 
